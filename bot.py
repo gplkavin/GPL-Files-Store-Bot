@@ -47,8 +47,8 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/JAsuran123"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/JAsuran123")
+                        InlineKeyboardButton("Support", url="https://t.me/gpl_kavinbot"),
+                        InlineKeyboardButton("Join Channel", url="https://t.me/ithunammacinema")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -88,7 +88,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/JAsuran123)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support](https://t.me/gpl_kavinbot)",
                                      disable_web_page_preview=True)
             return
 
@@ -282,7 +282,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/JAsuran/File-Store-Abir")
+                                             url="https://github.com/gplkavin/GPL-Files-Store-Bot")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -301,7 +301,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/JAsuran/File-Store-Abir")
+                                             url="https://github.com/gplkavin/GPL-Files-Store-Bot")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -319,8 +319,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/JAsuran123"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/JAsuran123")
+                        InlineKeyboardButton("Support", url="https://t.me/gpl_kavinbot"),
+                        InlineKeyboardButton("Join Channel", url="https://t.me/ithunammacinema")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -336,7 +336,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JAsuran123).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/gpl_kavinbot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -361,7 +361,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/JAsuran123).",
+                    text="Something went Wrong. Contact my [Support](https://t.me/gpl_kavinbot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -373,8 +373,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/JAsuran123"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("Support", url="https://t.me/gpl_kavinbot"),
+                        InlineKeyboardButton("Join Channel", url="https://t.me/ithunammacinema")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
